@@ -1,0 +1,139 @@
+﻿
+body {
+        padding: 0;
+        margin: 0 0 0 0 ;
+        font-family:Calibri,sans-serif;
+    }
+
+    section.Home {
+        background-color: #ffffff;
+    }
+
+    section.AboutUS {
+        background-color: #f1f1f1;
+        padding: 10px 0 10px 0;
+    }
+
+    .about p, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
+        text-align: justify;
+        vertical-align: top;
+    }
+
+    .responsive {
+        width: 100%;
+    }
+
+    .Center {
+        margin: 0 auto 0 auto;
+        display: block;
+    }
+
+    .row {
+        content: "";
+        clear: both;
+        display: block;
+    }
+.PlaceHolder {
+    min-height: 70px;
+}
+
+
+.Fixed-top {
+    position: fixed;
+    /*width: 100%;
+    min-width:590px;*/
+   width:100%;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    box-shadow: #000 0 0 10px;
+    margin: 0;
+    background-color: #9fc024;
+    padding: 10px 10px;
+}
+/*-----------------------------General Style*/
+a {
+    text-decoration: none;
+}
+
+/*----------------------------------table*/
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+    /*thead> tr {
+        position: absolute;
+       display:inline-block;
+        top: -9999px;
+        left: -9999px;
+    }*/
+
+tr {
+    border: 1px solid #ccc;
+    content:date("dd/mm/yyyy");
+}
+
+tbody td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 37%;
+}
+tbody td >a {
+    /* Behave  like a "row" */
+    border: none;
+    width: 4px;
+    position: relative;
+    padding-left: 0;
+}
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+	Label the data
+	*/
+    tbody td:nth-of-type(1):before {
+      content: "Date";
+      
+        }
+
+tbody td:nth-of-type(2):before {
+    content: "Preacher";
+}
+
+tbody td:nth-of-type(3):before {
+    content: "Title";
+}
+
+tbody td:nth-of-type(4):before {
+    content: "Reference";
+}
+
+tbody td:nth-of-type(5):before {
+    content: "Book";
+}
+
+tbody td:nth-of-type(6):before {
+    content: "Length(M.S)";
+}
+
+tbody td:nth-of-type(7):before {
+    content: "File Size(MB)";
+}
+table thead > tr > td {
+     padding: 2px; 
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+table{margin-top:20px;}
+

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CHBC-Sermons</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="Content/Phone.css" rel="stylesheet" media="screen and (min-width: 1px) and (max-width: 660px)" />
+    <link href="Content/Tablet.css" rel="stylesheet" media="screen and (min-width: 661px) and (max-width: 900px)" />
+    <link href="Content/Desktop.css" rel="stylesheet" media="screen and (min-width: 901px)" />
+  
+    <link href="Content/Table.css" rel="stylesheet" />
+    
+</head>
+<body>
+    
+  <div class="PlaceHolder" id="placeHolder">
+      <div class="FilterSection">
+         
+          Filter
+          <select id="filter">
+              <option>No filter</option>
+              <option>Book</option>
+              <option>Month</option>
+              <option>Preacher</option>
+              <option>Reference</option>
+              <option>Title</option>
+              <option>Year</option>
+          </select>
+          <input id="txtSearch" type="text" placeholder="Please select a filter first"/>
+          <button id="Add">Add</button>
+          <div class="criterion">
+
+          </div>
+      </div>
+  </div>
+   
+<table>
+</table>
+
+</body>
+<script src="JavaScripts/Lib_Ajax.js"></script>
+<script src="JavaScripts/Lib_Table.js"></script>
+<script src="JavaScripts/Sermons.js"></script>
+<script src="JavaScripts/criterion.js"></script>
+</html>
+<footer>
+    <div>
+        The data belongs to the Child Hill Baptist Church
+    </div>
+</footer>
