@@ -7,7 +7,7 @@
         if (menuHeight <= winY && document.getElementsByClassName("FilterSection").length > 0) {
             document.getElementById("placeHolder").style.minHeight = document.getElementsByClassName("FilterSection").item(0).clientHeight + 50 + "px";
             document.getElementsByClassName("FilterSection").item(0).classList.add("Fixed-top");
-            document.getElementsByClassName("FilterSection").item(0).classList.remove("FilterSection");  
+            document.getElementsByClassName("FilterSection").item(0).classList.remove("FilterSection");
         }
         if (menuHeight > winY && document.getElementsByClassName("Fixed-top").length > 0) {
             document.getElementsByClassName("Fixed-top").item(0).classList.add("FilterSection");

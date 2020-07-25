@@ -94,10 +94,10 @@ function Table(headerObjectParam, tableElementParam) {
         tableHeader.appendChild(headerRow);
         tableElement.appendChild(tableHeader);
     };
-    // Adding Body section
+    // Adds the table body section
     var initBody = function (data) {
 
-        // if initializing happen more than once then table must be prepaired from scratch
+        // Makes the table body empty if it is not.
         let tableBody = tableElement.querySelector("tbody");
         if (tableBody !== null) {
             tableElement.removeChild(tableBody);
@@ -114,8 +114,9 @@ function Table(headerObjectParam, tableElementParam) {
                         tableRowData.innerText = data[rowIndex][columnIndex];
                         tableRow.appendChild(tableRowData);
                     }
-                    //  Changing Date format 
+
                     if (data[rowIndex][columnIndex] == data[rowIndex]["Date"]) {
+                        //  Changes the data column format 
                         tableRowData.innerHTML = dateFormatter(data[rowIndex]["Date"], " ");
                         tableRowData.className = "FixedCell";
                         tableRow.appendChild(tableRowData);
@@ -257,7 +258,7 @@ function Table(headerObjectParam, tableElementParam) {
         let filterOption = document.getElementById("filter");
         let searchTextBox = document.getElementById("txtSearch");
         filterOption.addEventListener("change", function () {
-        console.log(filterOption.value);
+            console.log(filterOption.value);
             switch (filterOption.value) {
                 case "No filter": {
                     searchTextBox.setAttribute("placeholder", "Please select a filter first");
