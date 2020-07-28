@@ -160,30 +160,20 @@ option {
     border-style: none;
     
     padding-right: 45px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
     color: #4524c0;
     border-style: solid;
   border-width: 5px;
 }
 
 [class*='close'] {
-  color: #777;
-  font: 14px/0.1% arial, sans-serif;
   position: absolute;
-  right: 5px;
-
-  text-shadow: 0 1px 0 rgb(0, 0, 0);
-  top: 4px;
+  top: 0px;
+  right: 0px;
   border-radius: 100px 100px;
   padding: 10px 10px 10px 10px;
   background-color: red;
  
 }
 
-.close:after {
- 
-  position:absolute;
-  content: 'X';
- 
-}
